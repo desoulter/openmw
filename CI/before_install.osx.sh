@@ -15,7 +15,7 @@ command -v qmake >/dev/null 2>&1 || brew install qt@5
 export PATH="/usr/local/opt/qt@5/bin:$PATH"
 
 # Install deps
-brew install openal-soft icu4c yaml-cpp sqlite
+brew install openal-soft icu4c yaml-cpp sqlite bullet
 
 ccache --version
 cmake --version
