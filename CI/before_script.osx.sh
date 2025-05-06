@@ -7,6 +7,8 @@ rm -fr build
 mkdir build
 cd build
 
+export PATH="/usr/local/opt/qt@5/bin:$PATH"
+
 DEPENDENCIES_ROOT="/tmp/openmw-deps"
 
 QT_PATH=$(brew --prefix qt@5)
