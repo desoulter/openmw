@@ -30,6 +30,11 @@ jobs:
       run: |
         cd build
         make -j $(sysctl -n hw.logicalcpu) package
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: OpenMW-0.49.0-Darwin.dmg
+        path: build/OpenMW-0.49.0-Darwin.dmg
 
   Output-Envs:
     name: Read .env file and expose it as output
